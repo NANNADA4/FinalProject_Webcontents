@@ -3,8 +3,6 @@ $(document).ready(function() {
 	var current=0;
 	var slide_length = $('.slide_ul>li').length;//이미지의 갯수를 변수로
 	var btn_ul = '<ul class="slide_btn"></ul>';//버튼 LIST 작성할 UL
-	
-
 
 	$('.slide_ul>li').hide();//이미지 안보이게
 	$('.slide_ul>li').first().show();//이미지 하나만 보이게
@@ -12,7 +10,7 @@ $(document).ready(function() {
 	
 	$(btn_ul).prependTo($('.slide'))//slide 클래스위에 생성
 	for (var i = 0 ; i < slide_length; i++){//동그라미 버튼 생성 이미지 li 개수 만큼
-		var child = '<li><a href="#none">'+i+'</a></li>';
+		var child = '<li><a href="#none">' + i + '</a></li>';
 		$(child).appendTo($('.slide_btn'));
 	}
 	
@@ -21,7 +19,7 @@ $(document).ready(function() {
 	
 //자동 슬라이드 함수
 function autoplay(){
-	if(current == slide_length-1){
+	if(current == slide_length - 1){
 	current = 0;
 }else{
 	current++;
@@ -42,6 +40,5 @@ function slide_stop(){
 		$('.slide_ul > li').eq(fade_idx).fadeIn(400);
 		$('.slide_btn > li > a').removeClass('active');	
 		$(this).addClass('active');
-		
 	}	
 });

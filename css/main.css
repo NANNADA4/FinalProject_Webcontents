@@ -28,7 +28,6 @@ li{list-style: none;}
 
 .show{display:block;}
 
-
 /* 하단 동그라미 버튼 CSS*/
 .slide_btn>li{float: left; margin:0 5px 5px 0;}
 .slide_btn>li>a{display:block; width: 14px; height:14px; background: url(../images/spr.png) -24px -125px; text-indent: -999em; }
