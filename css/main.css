@@ -19,7 +19,7 @@ h1 {
 	
 /*슬라이드 몸통 */
 
-.slide{background : gray; text-align:center; position:relative; width: 800px; margin: 0 auto; display: block; height: 600px;}
+.slide{background : gray; text-align:center; position:relative; width: 1200px; margin: 0 auto; display: block; height: 900px;}
 
 .slide_ul{display: block;}
 .slide_ul>li{position:absolute; top:0; left:0; list-style:none;z-index:10; display: block;}
