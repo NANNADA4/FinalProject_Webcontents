@@ -1,10 +1,21 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-h1 { 
-    font-family: 'Do Hyeon', sans-serif; 
-}
+
 h1 {
-    font-size: 40px;
+	font-family: 'Do Hyeon', sans-serif; 
+	font-size: 40px;
+	color: white;
+	background-color: #3EA6FF;
+	font-size: 400%;
+	text-align: center;
+}
+
+hr {
+	display: block;
+	border: black 0 none;
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+	height: 5px;
 }
 
 *{margin:0; padding:0;}
