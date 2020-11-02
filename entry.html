@@ -8,22 +8,58 @@
 
     <link rel="stylesheet" href="./css/main.css" type="text/css">
 
-    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type = "text/javascript" src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 
 </head>
 <body>
-    <h1>더덕향에 오신 것을 환영합니다</h1>
-    <hr>
-    <div class = "slide">
-        <ul class = "slide_ul">
-        <li><a href = "main.html"><img src = "image/main.jpg" width = "800" onmouseover = "this.src = 'image/main_over.jpg'" onmouseout = "this.src = 'image/main.jpg'" alt = "main"></a></li>
-        <li><a href = "info.html"><img src = "image/info.jpg" width = "800" onmouseover = "this.src = 'image/info_over.jpg'" onmouseout = "this.src = 'image/info.jpg'" alt = "info"></a></li>
-        <li><a href = "PR.html"><img src = "image/PR.jpg" width = "800" onmouseover = "this.src = 'image/PR_over.jpg'" onmouseout = "this.src = 'image/PR.jpg'" alt = "PR"></a></li>
-        <li><a href = "reservation.html"><img src = "image/reservation.jpg" width = "800" onmouseover = "this.src = 'image/reservation_over.jpg'" onmouseout = "this.src = 'image/reservation.jpg'" alt = "reservation"></a></li>
-        <li><a href = "connect.html"><img src = "image/connect.jpg" width = "800" onmouseover = "this.src = 'image/connect_over.jpg'" onmouseout = "this.src = 'image/connect.jpg'" alt = "connect"></a></li>
-        </ul>
+    <div class="main">
+        <input id="tab1" type="radio" name="tabs" checked> <!--디폴트 메뉴-->
+        <label for="tab1">tab menu1</label>
+    
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2">tab menu2</label>
+    
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3">tab menu3</label>
+    
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4">tab menu4</label>
+    
+        <section id="content1">
+            <div>
+                <div class="container">
+                    <div class="card">
+                        <div class="sneaker">
+                            <div class="circle"></div>
+                            <img src="./adidas.png" alt="adidas">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">Adidas ZX</h1>
+                            <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                        </div>
+                        <div class="purchase">
+                            <button>Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="content2">
+            <p>tab menu2의 내용</p>
+        </section>
+    
+        <section id="content3">
+            <p>tab menu3의 내용</p>
+        </section>
+    
+        <section id="content4">
+            <p>tab menu4의 내용</p>
+        </section>
+    
     </div>
     <hr>
+    <script src="./js/main.js"></script>
 </body>
 </html>

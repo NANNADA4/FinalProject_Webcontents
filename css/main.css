@@ -1,50 +1,161 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+body {
+	color: #555;
+	background: #eeeeee;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;}
 
 h1 {
-	font-family: 'Do Hyeon', sans-serif; 
-	font-size: 40px;
-	color: white;
-	background-color: #3EA6FF;
-	font-size: 400%;
+	padding: 50px 0;
+	font-weight: 400;
+	text-align: center;}
+
+p {
+	margin: 0 0 20px;
+	line-height: 1.5;}
+
+.main {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 50px;
+	margin: 0 auto;
+	background: #ffffff;}
+
+section {
+	display: none;
+	padding: 20px 0 0;
+	border-top: 1px solid #ddd;}
+
+/*라디오버튼 숨김*/
+input {
+	display: none;}
+
+label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
 	text-align: center;
-}
+	color: #bbb;
+	border: 1px solid transparent;}
 
-hr {
-	display: block;
-	border: black 0 none;
-	border-top: black 1px solid;
-	border-bottom: black 1px solid;
-	height: 5px;
-}
+label:hover {
+	color: #2e9cdf;
+	cursor: pointer;}
 
-*{margin:0; padding:0;}
-	ul,ol,dl{list-style:none;}
-	img , video{max-width:100%; border:0;}
-	a{text-decoration:none; color:#333; display:inline-block;}
-	table{border-collapse:collapse; border-spacing:0;}
-	input , select {vertical-align:middle;}
-	html{height:100%;}
-	label{cursor:pointer;}
-	i , em , address{font-style:normal; font-weight:normal;}
-	
-/*슬라이드 몸통 */
+/*input 클릭시, label 스타일*/
+input:checked + label {
+	color: #555;
+	border: 1px solid #ddd;
+	border-top: 2px solid #2e9cdf;
+	border-bottom: 1px solid #ffffff;}
 
-.slide{background : gray; text-align:center; position:relative; width: 800px; margin: 0 auto; display: block; height: 600px;}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+	display: block;}
+/* 여기부터 카드 구현 CSS */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;}
 
-.slide_ul{display: block;}
-.slide_ul>li{position:absolute; top:0; left:0; list-style:none;z-index:10; display: block;}
-.slide_ul>li img{}
-li{list-style: none;}
+	body {
+		font-family: "Poppins", sans-serif;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		perspective: 1000px;}
 
-.show{display:block;}
+	.container {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: inline-block;
+		vertical-align: middle;}
 
-/* 하단 동그라미 버튼 CSS*/
-.slide_btn>li{float: left; margin:0 5px 5px 0;}
-.slide_btn>li>a{display:block; width: 14px; height:14px; background: url(./image/spr.png) -24px -125px; text-indent: -999em; }
-.slide_btn>li>a.active{background-position: 0 -126px;}
+	.container2 {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;}
 
-.slide_btn{z-index:100; position:absolute; right: 0; bottom:0; }
+	.card {
+		transform-style: preserve-3d;
+		min-height: 80vh;
+		width: 35rem;
+		border-radius: 30px;
+		padding: 0rem 5rem;
+		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);}
 
-.slide_btn:after{content:''; display:block; clear:both;}
-.slide_btn{*zoom:1;}
+	.sneaker {
+		min-height: 35vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.sneaker img {
+		width: 20rem;
+		z-index: 2;
+		transition: all 0.75s ease-out;
+	}
+	.circle {
+		width: 15rem;
+		height: 15rem;
+		background: linear-gradient(
+		to right,
+		rgba(245, 70, 66, 0.75),
+		rgba(8, 83, 156, 0.75)
+		);
+		position: absolute;
+		border-radius: 50%;
+		z-index: 1;
+	}
+
+	.info h1 {
+		font-size: 3rem;
+		transition: all 0.75s ease-out;
+	}
+	.info h3 {
+		font-size: 1.3rem;
+		padding: 2rem 0rem;
+		color: #585858;
+		font-weight: lighter;
+		transition: all 0.75s ease-out;
+	}
+	.sizes {
+		display: flex;
+		justify-content: space-between;
+		transition: all 0.75s ease-out;
+	}
+	.sizes button {
+		padding: 0.5rem 2rem;
+		background: none;
+		border: none;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 30px;
+		cursor: pointer;
+		font-weight: bold;
+		color: #585858;
+	}
+	button.active {
+		background: #585858;
+		color: white;
+	}
+	.purchase {
+		margin-top: 5rem;
+		transition: all 0.75s ease-out;
+	}
+	.purchase button {
+		width: 100%;
+		padding: 1rem 0rem;
+		background: #f54642;
+		border: none;
+		color: white;
+		cursor: pointer;
+		border-radius: 30px;
+		font-weight: bolder;
+	}

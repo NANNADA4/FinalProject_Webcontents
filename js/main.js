@@ -1,44 +1,37 @@
-$(document).ready(function() {
-	
-	var current=0;
-	var slide_length = $('.slide_ul>li').length;//이미지의 갯수를 변수로
-	var btn_ul = '<ul class="slide_btn"></ul>';//버튼 LIST 작성할 UL
+//Movement Animation to happen
+const card = document.querySelector(".card");
+const container = document.querySelector(".container");
+//Items
+const title = document.querySelector(".title");
+const sneaker = document.querySelector(".sneaker img");
+const purchase = document.querySelector(".purchase");
+const description = document.querySelector(".info h3");
+const sizes = document.querySelector(".sizes");
 
-	$('.slide_ul>li').hide();//이미지 안보이게
-	$('.slide_ul>li').first().show();//이미지 하나만 보이게
-	
-	
-	$(btn_ul).prependTo($('.slide'))//slide 클래스위에 생성
-	for (var i = 0 ; i < slide_length; i++){//동그라미 버튼 생성 이미지 li 개수 만큼
-		var child = '<li><a href="#none">' + i + '</a></li>';
-		$(child).appendTo($('.slide_btn'));
-	}
-	
-	$('.slide_btn > li > a').first().addClass('active');	
-	$('.slide_btn > li > a').on('click' , slide_stop);
-	
-//자동 슬라이드 함수
-function autoplay(){
-	if(current == slide_length - 1){
-	current = 0;
-}else{
-	current++;
-}
-	$('.slide_ul>li').stop().fadeOut(1000);
-	$('.slide_ul>li').eq(current).stop().fadeIn(1000);
-	$('.slide_btn > li > a').removeClass('active');	
-	$('.slide_btn > li > a').eq(current).addClass('active');	
-}
-setInterval(autoplay,3000);//반복
-
-//버튼 클릭시 호출되는 함수
-function slide_stop(){
-		var fade_idx = $(this).parent().index(); 
-		current = $(this).parent().index();//클릭한 버튼의 Index 를 받아서 그 다음 이미지부터 슬라이드 재생.
-		if($('.slide_ul > li:animated').length >= 1) return false; //버튼 반복 클릭시 딜레이 방지
-		$('.slide_ul > li').fadeOut(400);
-		$('.slide_ul > li').eq(fade_idx).fadeIn(400);
-		$('.slide_btn > li > a').removeClass('active');	
-		$(this).addClass('active');
-	}	
+//Moving Animation Event
+container.addEventListener("mousemove", (e) => {
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+//Animate In
+container.addEventListener("mouseenter", (e) => {
+  card.style.transition = "none";
+  //Popout
+  title.style.transform = "translateZ(150px)";
+  sneaker.style.transform = "translateZ(200px) rotateZ(-45deg)";
+  description.style.transform = "translateZ(125px)";
+  sizes.style.transform = "translateZ(100px)";
+  purchase.style.transform = "translateZ(75px)";
+});
+//Animate Out
+container.addEventListener("mouseleave", (e) => {
+  card.style.transition = "all 0.5s ease";
+  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  //Popback
+  title.style.transform = "translateZ(0px)";
+  sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
+  description.style.transform = "translateZ(0px)";
+  sizes.style.transform = "translateZ(0px)";
+  purchase.style.transform = "translateZ(0px)";
 });
