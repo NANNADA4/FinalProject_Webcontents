@@ -52,17 +52,17 @@ label:hover {
 }
 
 /*input 클릭시, label 스타일*/
-input:checked+label {
+input:checked + label {
     color: #555;
     border: 1px solid #ddd;
     border-top: 2px solid #2e9cdf;
     border-bottom: 1px solid #ffffff;
 }
 
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4 {
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
     display: block;
 }
 
@@ -123,9 +123,11 @@ body {
 .circle {
     width: 15rem;
     height: 15rem;
-    background: linear-gradient(to right,
-            rgba(245, 70, 66, 0.75),
-            rgba(8, 83, 156, 0.75));
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.75),
+        rgba(8, 83, 156, 0.75)
+    );
     position: absolute;
     border-radius: 50%;
     z-index: 1;
