@@ -7,62 +7,33 @@
 
     <title>더덕향</title>
 
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
 
 <body>
-    <div class="main">
-        <input id="tab1" type="radio" name="tabs" checked>
-        <!--디폴트 메뉴-->
-        <label for="tab1">Main</label>
-
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2">tab menu2</label>
-
-        <input id="tab3" type="radio" name="tabs">
-        <label for="tab3">tab menu3</label>
-
-        <input id="tab4" type="radio" name="tabs">
-        <label for="tab4">tab menu4</label>
-
-        <section id="content1">
-            <div>
-                <div class="container">
-                    <div class="card">
-                        <div class="photo_card">
-                            <div class="circle"></div>
-                            <img src="./adidas.png" alt="adidas">
-                        </div>
-                        <div class="info">
-                            <h1 class="title">Adidas ZX</h1>
-                            <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
-                        </div>
-                        <div class="purchase">
-                            <button>Purchase</button>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="card">
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="./adidas.png" alt="adidas">
+            </div>
+            <div class="info">
+                <h1 class="title">더덕향</h1>
+                <h3>더덕향 홈페이지에 오신 것을 환영합니다.</h3>
+                <div class="sizes">
+                    <button>Main</button>
+                    <button>Info</button>
+                    <button class="active">Menu</button>
+                    <button>Reser.</button>
+                    <button>connect</button>
+                </div>
+                <div class="purchase">
+                    <button>Purchase</button>
                 </div>
             </div>
-        </section>
-
-        <section id="content2">
-            <p>tab menu2의 내용</p>
-        </section>
-
-        <section id="content3">
-            <p>tab menu3의 내용</p>
-        </section>
-
-        <section id="content4">
-            <p>tab menu4의 내용</p>
-        </section>
-
+        </div>
     </div>
-    <hr>
     <script src="./js/main.js"></script>
 </body>
 
