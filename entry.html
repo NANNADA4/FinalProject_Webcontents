@@ -9,6 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
@@ -20,16 +21,16 @@
             </div>
             <div class="info">
                 <h1 class="title">더덕향</h1>
-                <h3>더덕향 홈페이지에 오신 것을 환영합니다.</h3>
+                <h3 id="EntryTitle">더덕향 홈페이지에 오신 것을 환영합니다.</h3>
                 <div class="sizes">
-                    <button>Main</button>
-                    <button>Info</button>
-                    <button class="active">Menu</button>
-                    <button>Reser.</button>
-                    <button>connect</button>
+                    <button class="active" onclick="ClickTitle1('Go To Main Page', 'EntryTitle');">Main</button>
+                    <button onclick="ClickTitle2('Go To Information Page', 'EntryTitle');">Info</button>
+                    <button onclick="ClickTitle3('Go To Menu Page', 'EntryTitle');">Menu</button>
+                    <button onclick="ClickTitle4('Go To Reservation Page', 'EntryTitle');">Reser.</button>
+                    <button onclick="ClickTitle5('Go To Connect Page', 'EntryTitle');">connect</button>
                 </div>
-                <div class="purchase">
-                    <button>Purchase</button>
+                <div class="MovePage">
+                    <button>이동</button>
                 </div>
             </div>
         </div>
