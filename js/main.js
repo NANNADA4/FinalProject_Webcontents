@@ -35,7 +35,7 @@ container.addEventListener("mouseleave", (e) => {
     sizes.style.transform = "translateZ(0px)";
     MovePage.style.transform = "translateZ(0px)";
 });
-//click_title event
+//EntryTitle onmouse event
 function ClickTitle1(t, o) {
     var o = document.getElementById(o);
     o.innerHTML = t;
