@@ -39,6 +39,7 @@ container.addEventListener("mouseleave", (e) => {
 function ClickTitle1(t, o) {
     var o = document.getElementById(o);
     o.innerHTML = t;
+    ClickTitle1.classList.toggle("active");
 }
 function ClickTitle2(t, o) {
     var o = document.getElementById(o);
@@ -55,4 +56,9 @@ function ClickTitle4(t, o) {
 function ClickTitle5(t, o) {
     var o = document.getElementById(o);
     o.innerHTML = t;
+}
+
+//버튼 클릭시 페이지 이동
+function dbl_click(href) {
+    location.href = href;
 }
