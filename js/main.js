@@ -39,7 +39,6 @@ container.addEventListener("mouseleave", (e) => {
 function ClickTitle1(t, o) {
     var o = document.getElementById(o);
     o.innerHTML = t;
-    ClickTitle1.classList.toggle("active");
 }
 function ClickTitle2(t, o) {
     var o = document.getElementById(o);
