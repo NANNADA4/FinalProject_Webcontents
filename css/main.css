@@ -87,10 +87,6 @@ body {
     font-weight: bold;
     color: #585858;
 }
-/* button.active {
-    background: #585858;
-    color: white;
-} */
 .btn1:hover,
 .btn2:hover,
 .btn3:hover,
@@ -98,18 +94,4 @@ body {
 .btn5:hover {
     background: #585858;
     color: white;
-} /*버튼 호버시 색상 변경 */
-/* .MovePage {
-    margin-top: 5rem;
-    transition: all 0.75s ease-out;
 }
-.MovePage button {
-    width: 100%;
-    padding: 1rem 0rem;
-    background: #f54642;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 30px;
-    font-weight: bolder;
-} */
