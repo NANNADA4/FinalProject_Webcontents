@@ -61,5 +61,3 @@ function ClickTitle5(t, o) {
 function dbl_click(href) {
     location.href = href;
 }
-
-//Background Image Slider
