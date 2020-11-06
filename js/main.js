@@ -57,7 +57,9 @@ function ClickTitle5(t, o) {
     o.innerHTML = t;
 }
 
-//버튼 클릭시 페이지 이동
+//Page move with button click
 function dbl_click(href) {
     location.href = href;
 }
+
+//Background Image Slider
