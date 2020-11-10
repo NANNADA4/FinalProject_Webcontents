@@ -15,6 +15,7 @@ body {
     justify-content: center;
     perspective: 1000px;
 }
+/* figure 속성을 사용한 이미지 슬라이더 */
 .crossfade > figure {
     animation: imageAnimation 30s linear infinite 0s;
     backface-visibility: hidden;
@@ -72,6 +73,7 @@ body {
         opacity: 0;
     }
 }
+/* 기본 뼈대 */
 .card {
     transform-style: preserve-3d;
     min-height: 60vh;
@@ -89,6 +91,7 @@ body {
 }
 .EntryImage img {
     width: 20rem;
+    /* 이미지가 앞으로 */
     z-index: 2;
     transition: all 0.75s ease-out;
 }
@@ -99,6 +102,7 @@ body {
     position: absolute;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+    /* 원이 뒤로 */
     z-index: 1;
 }
 .info h1 {
