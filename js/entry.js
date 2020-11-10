@@ -8,7 +8,7 @@ card.addEventListener("mouseenter", (e) => {
 card.addEventListener("mouseleave", (e) => {
     EntryImage.style.transform = "rotateZ(0deg)";
 });
-//EntryTitle onmouse event
+// 클릭시 문장 변경
 function ClickTitle1(t, o) {
     var o = document.getElementById(o);
     o.innerHTML = t;
