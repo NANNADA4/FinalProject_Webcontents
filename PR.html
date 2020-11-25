@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container_nav">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="z-index: 2000;">
             <a class="navbar-brand" href="./entry.html">
                 <img src="/image/MainLogo.png" width="85" height="30" class="d-inline-block align-top" alt="더덕향 로고">
@@ -58,26 +58,54 @@
         <h1>
             이 곳에서 다양한 메뉴를 만나보세요
         </h1>
-        <h5>
-            강원도의 특산품 더덕, '메밀꽃 필 무렵' 봉평의 특산품 메밀<br>
-            이 모든 것을 한 곳에서 즐기실 수 있는 곳. <br>
-            바로 더덕향입니다.
-        </h5>
     </div>
 
-    <div class="tab_main">
-        <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1">더덕 메뉴</label>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p></p>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#ginseng">더덕 메뉴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#buckwheat">메밀 메뉴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#set_menu">Set Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="tab" href="#etc">etc.</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="ginseng">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ornare libero. Vivamus
+                            iaculis,
+                            justo vel mattis pharetra, nisi ligula varius nisl, sit amet mollis tortor ligula vitae
+                            nisi.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="buckwheat">
+                        <p>Nunc vitae turpis id nibh sodales commodo et non augue. Proin fringilla ex nunc. Integer
+                            tincidunt risus ut facilisis tristique.</p>
+                    </div>
+                    <div class="tab-pane fade" id="set_menu">
+                        <p>Curabitur dignissim quis nunc vitae laoreet. Etiam ut mattis leo, vel fermentum tellus. Sed
+                            sagittis rhoncus venenatis. Quisque commodo consectetur faucibus. Aenean eget ultricies
+                            justo.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="etc">
 
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2">메밀 메뉴</label>
-
-        <input id="tab3" type="radio" name="tabs">
-        <label for="tab3">Set Menu</label>
-
-        <input id="tab4" type="radio" name="tabs">
-        <label for="tab4">etc.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
