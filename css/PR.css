@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nanum Gothic", sans-serif;
 }
 
 .container_nav {
@@ -102,4 +103,9 @@ div.desc {
 
 .Panel_up > h2 {
     color: white;
+}
+
+.footer_address {
+    background-color: #ccc;
+    padding: 20px;
 }
