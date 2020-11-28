@@ -39,7 +39,7 @@ h3 {
 
 .info_left {
     width: 49%;
-    padding: 20px 0 10px 15%;
+    padding: 50px 0 10px 15%;
     overflow: hidden;
     vertical-align: top;
     float: left;
@@ -47,11 +47,26 @@ h3 {
 
 .info_right {
     width: 49%;
-    padding: 20px 15% 10px 0;
+    padding: 50px 15% 10px 0;
     overflow: hidden;
     vertical-align: top;
     float: right;
     text-align: center;
+}
+
+.info_rightdown {
+    width: 49%;
+    padding: 15px 15% 10px 0;
+    overflow: hidden;
+    vertical-align: top;
+    float: right;
+    text-align: center;
+}
+
+.info_down {
+    width: 100%;
+    padding: 10px 15% 10px 15%;
+    overflow: hidden;
 }
 
 .info_pic {
@@ -59,11 +74,6 @@ h3 {
     width: 180px;
     margin: 0 20px 10px 0;
 }
-
-/* .info_youtube {
-    float: right;
-    width: 500px;
-} */
 
 .margin_down {
     padding: 10px;
@@ -74,6 +84,25 @@ h3 {
     padding: 10px;
     margin: 0 0 20px 0;
     border-radius: 0 0 20px 20px;
+}
+
+.Panel_left {
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 0 0 13px;
+    width: 49%;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 200%;
+}
+
+.Panel_right {
+    padding: 10px;
+    margin: 0 13px 0 0;
+    width: 49%;
+    overflow: hidden;
+    float: right;
+    line-height: 200%;
 }
 
 .Panel_up {
