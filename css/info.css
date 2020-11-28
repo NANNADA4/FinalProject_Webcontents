@@ -87,21 +87,19 @@ h3 {
 }
 
 .Panel_left {
-    border-right: 1px solid #ccc;
     padding: 10px;
-    margin: 0 0 0 13px;
     width: 49%;
+    float: left;
     overflow: hidden;
-    display: inline-block;
     line-height: 200%;
 }
 
 .Panel_right {
+    border-left: 1px solid #ccc;
     padding: 10px;
-    margin: 0 13px 0 0;
     width: 49%;
     overflow: hidden;
-    float: right;
+    display: inline-block;
     line-height: 200%;
 }
 
