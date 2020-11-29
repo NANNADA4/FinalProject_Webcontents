@@ -73,10 +73,10 @@
                     아래에 있는 예약 양식으로 이동합니다.
                 </li>
                 <li>
-                    예약을 원하시는 날짜와 시간, 전화번호, 인원 수를 선택합니다.
+                    예약을 원하시는 날짜와 시간, 전화번호, 인원 수, 이메일을 입력합니다.
                 </li>
                 <li>
-                    마지막으로 본인의 이메일을 입력하신 후 예약하기를 선택합니다.
+                    마지막으로 하단에 위치해 있는 예약 확인 버튼을 클릭합니다.
                 </li>
                 <li>
                     예약이 완료되었습니다! 이제 입력하신 이메일 주소로 발신된 이메일을 확인하신 후, 최종 확인 전화를 기다려주세요.
@@ -129,9 +129,16 @@
             </p>
             <p>
             <h3 class="h3_hyperlink">
-                <a href="./PR.html">
-                    &lt;메뉴 확인하러 가기&gt;
-                </a>
+                <p>
+                    <a href="./PR.html">
+                        &lt;메뉴 확인하러 가기&gt;
+                    </a>
+                </p>
+                <p>
+                    <a href="./info.html">
+                        &lt;홍보 영상 보러가기&gt;
+                    </a>
+                </p>
             </h3>
             </p>
         </div>
@@ -178,8 +185,15 @@
                     <p><input type="text" id="text1" required placeholder="010-0000-0000"></p>
                     <p><input type="number" id="number1" required placeholder="4" min="4"></p>
                     <p><input type="email" id="email1" required placeholder="sample@gmail.com"></p>
-                    <p><input type="button" value="예약 하기" onclick="formsubmit();"></p>
+                    <p>
+                        <input type="button" value="예약 하기" onclick="formsubmit();">
+                    </p>
                 </form>
+                <p>
+                <div id="sendMail">
+                    예약 확인
+                </div>
+                </p>
             </div>
         </div>
     </div>
