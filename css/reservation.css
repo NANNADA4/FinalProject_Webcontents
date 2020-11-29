@@ -80,7 +80,7 @@ h3 {
 }
 
 .Panel_left {
-    padding: 15px 10px 10px 50px;
+    padding: 20px 10px 10px 50px;
     width: 49%;
     float: left;
     overflow: hidden;
@@ -94,6 +94,7 @@ h3 {
     overflow: hidden;
     display: inline-block;
     line-height: 200%;
+    text-align: center;
 }
 
 .info {
@@ -129,4 +130,26 @@ h3 {
 .footer_address {
     background-color: #ccc;
     padding: 20px;
+}
+
+input {
+    width: 200px;
+}
+
+input:hover {
+    background: aliceblue;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    font-size: 120%;
+}
+
+input[type="button"] {
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
 }

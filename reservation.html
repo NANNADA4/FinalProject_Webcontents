@@ -97,7 +97,7 @@
         </div>
         <div class="Panel">
             <h2 class="Panel_h2">
-                현재 날짜는 <span id="clock"></span>입니다. <br>
+                오늘 날짜는 <span id="clock"></span>입니다. <br>
             </h2>
             <hr>
             <p>
@@ -172,13 +172,13 @@
                 </p>
             </div>
             <div class="Panel_right">
-                <form>
-                    <p><input type="date" required></p>
-                    <p><input type="time" required value="09:00" min="09:00" max="19:00"> </p>
-                    <p><input type="text" required placeholder="010-0000-0000"></p>
-                    <p><input type="number" required placeholder="4" min="4"></p>
-                    <p><input type="email" required placeholder="sample@gmail.com"></p>
-                    <p><input type="submit" value="Submit"></p>
+                <form method="POST" name="form1" onsubmit="return formsubmit()">
+                    <p><input type="date" name="date" required></p>
+                    <p><input type="time" name="time" required value="09:00" min="09:00" max="19:00"> </p>
+                    <p><input type="text" name="text" required placeholder="010-0000-0000"></p>
+                    <p><input type="number" name="number" required placeholder="4" min="4"></p>
+                    <p><input type="email" name="email" required placeholder="sample@gmail.com"></p>
+                    <p><input type="button" value="예약 하기" onclick="formsubmit();"></p>
                 </form>
             </div>
         </div>
