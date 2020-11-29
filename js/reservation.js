@@ -16,18 +16,39 @@ window.onload = function () {
     printTime();
 };
 
+function check() {
+    var dateValue = document.getElementById("date1").value;
+    var timeValue = document.getElementById("time1").value;
+    var textValue = document.getElementById("text1").value;
+    var numberValue = document.getElementById("number1").value;
+    var emailValue = document.getElementById("email1").value;
+
+    confirm(
+        dateValue +
+            " " +
+            timeValue +
+            " " +
+            textValue +
+            " " +
+            numberValue +
+            " " +
+            emailValue
+    );
+}
+
 function formsubmit() {
-    if (!document.form1.date.value) {
+    if (!document.getElementById("date1").value) {
         alert("날짜를 입력해주세요.");
-    } else if (!document.form1.time.value) {
+    } else if (!document.getElementById("time1").value) {
         alert("시간을 입력해주세요.");
-    } else if (!document.form1.text.value) {
+    } else if (!document.getElementById("text1").value) {
         alert("전화번호를 입력해주세요.");
-    } else if (!document.form1.number.value) {
+    } else if (!document.getElementById("number1").value) {
         alert("인원 수를 입력해주세요.");
-    } else if (!document.form1.email.value) {
+    } else if (!document.getElementById("email1").value) {
         alert("이메일을 입력해주세요.");
     } else {
+        check();
         return false;
     }
 }
