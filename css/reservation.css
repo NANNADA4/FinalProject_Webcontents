@@ -30,6 +30,10 @@ h3 {
     text-align: center;
 }
 
+.h3_hyperlink {
+    color: #007bff;
+}
+
 .container_nav {
     display: inline-block;
 }
@@ -62,13 +66,21 @@ h3 {
     border-radius: 0 0 20px 20px;
 }
 
+.Panel > p {
+    text-align: center;
+}
+
+.Panel > ol {
+    margin: 0 0 0 50px;
+}
+
 .Panel_h2 {
     text-align: center;
     color: red;
 }
 
 .Panel_left {
-    padding: 10px 10px 10px 50px;
+    padding: 15px 10px 10px 50px;
     width: 49%;
     float: left;
     overflow: hidden;
@@ -77,7 +89,7 @@ h3 {
 
 .Panel_right {
     border-left: 1px solid #ccc;
-    padding: 25px 10px 10px 10px;
+    padding: 30px 10px 10px 10px;
     width: 49%;
     overflow: hidden;
     display: inline-block;
@@ -87,6 +99,13 @@ h3 {
 .info {
     width: 100%;
     padding: 50px 15% 10px 15%;
+    overflow: hidden;
+    vertical-align: left;
+}
+
+.info_down {
+    width: 100%;
+    padding: 10px 15% 50px 15%;
     overflow: hidden;
     vertical-align: left;
 }

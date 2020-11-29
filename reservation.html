@@ -119,10 +119,20 @@
                     연락이 오지 않을 경우, 하단 연락처로 연락 바랍니다.
                 </li>
                 <li>
-                    무리한 예약 일정이나 사업장에서 부득이한 이유가 있다고 판단할 경우, 예약이 취소될 수 있습니다.
+                    무리한 예약 일정이나 사업장에서 부득이한 사유가 있다고 판단할 경우, 예약이 취소될 수 있습니다.
+                </li>
+                <li>
+                    예약은 4인부터 가능합니다.
                 </li>
             </ul>
             <hr>
+            </p>
+            <p>
+            <h3 class="h3_hyperlink">
+                <a href="./PR.html">
+                    &lt;메뉴 확인하러 가기&gt;
+                </a>
+            </h3>
             </p>
         </div>
     </div>
@@ -160,20 +170,55 @@
                     이메일 주소
                 </h2>
                 </p>
-
             </div>
             <div class="Panel_right">
                 <form>
-                    <p><input type="date" value="2020-12-01"></p>
-                    <p><input type="time" value="09:00"> </p>
-                    <p><input type="text" value="010-0000-0000"></p>
-                    <p><input type="number" value="4"></p>
-                    <p><input type="email" value="sample@gmail.com"></p>
+                    <p><input type="date" required></p>
+                    <p><input type="time" required value="09:00" min="09:00" max="19:00"> </p>
+                    <p><input type="text" required placeholder="010-0000-0000"></p>
+                    <p><input type="number" required placeholder="4" min="4"></p>
+                    <p><input type="email" required placeholder="sample@gmail.com"></p>
                     <p><input type="submit" value="Submit"></p>
                 </form>
             </div>
         </div>
     </div>
+
+    <div class="info_down">
+        <div class="Panel_up">
+            <h2>
+                식당 영업 시간 및 상담 가능 시간
+            </h2>
+        </div>
+        <div class="Panel">
+            <h3>
+                &lt;식당 영업 시간&gt;
+            </h3>
+            <hr>
+            <p>
+                연중 무휴, AM 09:00 ~ PM 21:00 <br>
+                (Last Order - PM 20:00)
+            </p>
+            <hr>
+            <h3>
+                &lt;상담 가능 시간&gt;
+            </h3>
+            <hr>
+            <p>
+                연중 무휴, AM 10:00 ~ 11:00, PM 02:00 ~ 20:00 (성수기) <br>
+                연중 무휴, AM 10:00 ~ 21:00 (비수기)
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_address">
+            <address>
+                더덕향 <br>
+                강원도 평창군 봉평면 이효석길 118 <br>
+                Tel. 033-335-6888
+            </address>
+        </div>
+    </footer>
 </body>
 
 </html>
