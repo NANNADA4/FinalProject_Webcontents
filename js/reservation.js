@@ -25,14 +25,15 @@ function check() {
 
     confirm(
         dateValue +
-            " " +
+            "일, " +
             timeValue +
-            " " +
+            "시, 전화번호 : " +
             textValue +
-            " " +
+            ", " +
             numberValue +
-            " " +
-            emailValue
+            "명, 이메일 : " +
+            emailValue +
+            "이 맞나요?"
     );
 }
 
