@@ -32,27 +32,27 @@ body {
     filter: blur(8px);
 }
 .crossfade > figure:nth-child(1) {
-    background-image: url("../image/slide1.jpg");
+    background-image: url("https://cvws.icloud-content.com/B/AQMISF9LALhj4_YdgP45sMUAIMj6AZO3PK-qtnPwctj3Ws0Qs6IqZutE/slide1.jpg?o=At3Z_NcKmT9qLIog-DOZSSCIUenNYuCyzRzfQeue23_b&v=1&x=3&a=CAogDKKKZyeO_bZPAwxbMJFiP1kN95gDNxr5M9JzZmW5aXcSbRD466u04S4YmOPitOEuIgEAUgQAIMj6WgQqZutEaiYhNcU28pxkC4GZG2F89utuCuoIdigd_xQC86tzCcHsIL65OK5LOnImAhR9uzPLwG8fvIdg4T67e8ls7ZWLbMpZ5Pg2KzGEj30Q66QFiKk&e=1606696874&fl=&r=396bf170-0a36-43b8-9f44-18ce6ea0a6a4-1&k=kJFxaqBuzq5xSKfz8h0wzg&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=57&s=jfunJQfsHWBxIr4ge0W4NKOoTKQ&cd=i");
 }
 
 .crossfade > figure:nth-child(2) {
     animation-delay: 6s;
-    background-image: url("../image/slide2.jpg");
+    background-image: url("https://cvws.icloud-content.com/B/AU75Tew_FtXMZPiopvORLNt_RHauAfMVoGhDUF-uKxg74TPf7cAq67gG/slide2.jpg?o=AieK2BegifDpLD0BUZXXh6XXpKP4qHV95Dd7AoVhve0H&v=1&x=3&a=CAogv0Jlcc92D2s0fgNa0E5zgabZQgkaCjrJ5ZMIEqraSfsSbRCvo6204S4Yz5rktOEuIgEAUgR_RHauWgQq67gGaiZ46QP-Z_MBIJd5pqGe0f-KEzM2o6nuF4oXj3ncETa2Z14-DlYoNXImU6pBoAgv8kBA1ZK4p47GtKhRrN-SKlGRNbx2jkbNTqgnjoPvHwg&e=1606696897&fl=&r=9bfe94ed-1ad8-4f59-bdc7-460539a389c4-1&k=LRSpAsndDpZmWFUcOxT-qQ&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=57&s=Wg0CsXAZaHhdKSHp_imGdVJt38I&cd=i");
 }
 
 .crossfade > figure:nth-child(3) {
     animation-delay: 12s;
-    background-image: url("../image/slide3.jpg");
+    background-image: url("https://cvws.icloud-content.com/B/AU1-efFwhW1E5GrXPXb8zYLHYY1CAV4FW8MH6up75f-dUijvf__F-KzR/slide3.jpg?o=ApZiwYtxfFa79zaAwOFDe4KT7LbpXkkkUrmr-Mn19YCe&v=1&x=3&a=CAogq2inrrV6ENW8xNWEF4Nau2So2s1dQqWkaU6pzDvbRdASbRD8jK604S4YnITltOEuIgEAUgTHYY1CWgTF-KzRaiZb7719GE_wxPfNxqFdYtWAgqW2KEeH85BiqCGqutbgpNNkcQxxPnImJdZad8DGw6fp3pnwXmuiHrraET_10qiwv-YrX4JwS8Bp1cbyGHA&e=1606696911&fl=&r=b6e2ce1b-b21b-414a-8533-20b1125926cf-1&k=wjs_Dz3CX47nOrfYnq34iQ&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=57&s=D9OgLKjhGaEIsUvCweHxbZs9BCY&cd=i");
 }
 
 .crossfade > figure:nth-child(4) {
     animation-delay: 18s;
-    background-image: url("../image/slide4.jpg");
+    background-image: url("https://cvws.icloud-content.com/B/AfwcSEX4129qZKE-A9UDNQyq5kdNAaRl9sAMl2I3hTZvK4_HjGXtVJJD/slide4.jpg?o=ApQm629YEHlhHn-WX9tbDsT3k-Hr7ZXpHjCctTZOHOon&v=1&x=3&a=CAogDUO-zUhDG9g9YaQs-3aJS-vdo1jtg14TSeRJSiY-As4SbRDP7K604S4Y7-PltOEuIgEAUgSq5kdNWgTtVJJDaiY2uoPXN9GFfoTc-StNjnIaEN-kJ10Tlpb1exxdMPwesBVQzgeZzXImTWCd8zF0ZnbAg9ECB9AiDmE_4EL3g3ilUBmtjBFeEKq-aC60wSA&e=1606696923&fl=&r=a6ddb986-0e87-46d5-a54b-228f50fa8c60-1&k=9MSBk7tFQoHJ-vWyDJl99A&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=57&s=K0gShMN5DIyIeBCRMD3LvEEhEY0&cd=i");
 }
 
 .crossfade > figure:nth-child(5) {
     animation-delay: 24s;
-    background-image: url("../image/slide5.JPG");
+    background-image: url("https://cvws.icloud-content.com/B/ATqVWkacvrgQZTjMLw_6ISKGislcAf9_RXAApaGcNsOQjB9zDDOZ9pPf/slide5.JPG?o=AkKFLOrbuyu7C6lEfGo3Iv6K1CKsSAeKvs2DDa9DbeEL&v=1&x=3&a=CAogiPDjaJhjJ-ZmBVV3-q-onI55OkqucMy7LAdxsgHDKEESbRCq36-04S4YytbmtOEuIgEAUgSGislcWgSZ9pPfaiYEU91j3Mu_vLmrh8lHfAnUPlF1AUxL3MZIvxR83g_IV9gD_DK9u3Im93hSl5WDidnlGzNaq2hsgobwyks0EnRmVUqQpKdRZb3aZQWLllU&e=1606696938&fl=&r=7207e74f-c11c-4150-a0c7-355f9043aa9a-1&k=5zGWDV9xDEAzqkCS0fXOZA&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=57&s=Wn9GBZLjHhwWPlXoD_J37AzCySM&cd=i");
 }
 @keyframes imageAnimation {
     0% {
